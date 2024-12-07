@@ -66,18 +66,18 @@ npm start
 
 1.Run the Application
 
-Open the application in your browser.
+--Open the application in your browser.
 
 2.Review Candidates
 
-Use the "+" button to save a candidate to the list of potential hires.
-Use the "-" button to skip to the next candidate without saving.
+--Use the "+" button to save a candidate to the list of potential hires.
+--Use the "-" button to skip to the next candidate without saving.
 
 3.View Saved Candidates
-Navigate to the Potential Candidates page to view all saved candidates.
+--Navigate to the Potential Candidates page to view all saved candidates.
 
 4.Persistent Data
-Saved candidates will remain available even after the page reloads.
+--Saved candidates will remain available even after the page reloads.
 
 ## Environment Variables
 This application requires a GitHub token for accessing candidate information.
