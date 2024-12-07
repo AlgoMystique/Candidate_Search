@@ -7,7 +7,8 @@ The application is live and deployed on **Render**.
 Check it out here: [Candidate Search Application](https://candidate-search-zxf7.onrender.com).
 
 ### Screenshot of Deployed Application  
-![Deployed Application Screenshot](https://via.placeholder.com/800x450.png?text=Deployed+Application)
+![Deployed Application Screenshot](public/shot1.png)
+![Deployed Application Screenshot](public/shot2.png)
 
 ## Table of Contents
 - [Description](#description)
