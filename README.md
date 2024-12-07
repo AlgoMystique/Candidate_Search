@@ -107,7 +107,7 @@ This application requires a GitHub token for accessing candidate information.
 
 -Copy the token.
 
---Read more here- [](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+--For further information - [Click Here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 ## 2.Set Up .env File
 
