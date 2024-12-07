@@ -82,7 +82,7 @@ Saved candidates will remain available even after the page reloads.
 ## Environment Variables
 This application requires a GitHub token for accessing candidate information.
 
-** 1.Generate a GitHub Token
+## 1.Generate a GitHub Token
 
 -Log in to GitHub.
 
@@ -94,7 +94,7 @@ This application requires a GitHub token for accessing candidate information.
 
 -Copy the token.
 
-** 2.Set Up .env File
+## 2.Set Up .env File
 
 -Create a .env file in the root directory and add the following:
 
@@ -115,7 +115,8 @@ REACT_APP_GITHUB_TOKEN=<your-github-token>
 -Create a new branch for your feature or fix.
 -Submit a pull request with a detailed explanation of your changes.
 
-##License
+## License
+
 -This project is licensed under the MIT License.---
 
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
