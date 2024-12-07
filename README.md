@@ -1,5 +1,14 @@
 # Candidate Search Application
 
+The **Candidate Search Application** is a web-based tool designed to help employers streamline their hiring process by browsing GitHub profiles. Using a personal GitHub token, the application fetches candidate information and enables users to decide whether to save or skip candidates for further review. Saved candidates are stored persistently for easy access.
+
+The application is live and deployed on **Render**. 
+
+Check it out here: [Candidate Search Application](https://candidate-search-zxf7.onrender.com).
+
+### Screenshot of Deployed Application  
+![Deployed Application Screenshot](https://via.placeholder.com/800x450.png?text=Deployed+Application)
+
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
@@ -12,11 +21,6 @@
 
 ---
 
-## Description
-
-The **Candidate Search Application** is a web-based tool designed to help employers streamline their hiring process by browsing GitHub profiles. Using a personal GitHub token, the application fetches candidate information and enables users to decide whether to save or skip candidates for further review. Saved candidates are stored persistently for easy access.
-
----
 
 ## Features
 
