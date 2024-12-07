@@ -1,44 +1,42 @@
-const searchGithub = async () => {
-  try {
-    const start = Math.floor(Math.random() * 100000000) + 1;
-    // console.log(import.meta.env);
-    const response = await fetch(
-      `https://api.github.com/users?since=${start}`,
-      {
-        headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-        },
-      }
-    );
-    // console.log('Response:', response);
-    const data = await response.json();
-    if (!response.ok) {
-      throw new Error('invalid API response, check the network tab');
-    }
-    // console.log('Data:', data);
-    return data;
-  } catch (err) {
-    // console.log('an error occurred', err);
-    return [];
-  }
-};
+import { Octokit } from '@octokit/core';
+
+// Add debug logging to check token
+console.log('Token exists:', !!import.meta.env.VITE_GITHUB_TOKEN);
+console.log('Token first few characters:', import.meta.env.VITE_GITHUB_TOKEN?.slice(0, 4));
+
+const octokit = new Octokit({
+  auth: import.meta.env.VITE_GITHUB_TOKEN
+});
 
 const searchGithubUser = async (username: string) => {
   try {
-    const response = await fetch(`https://api.github.com/users/${username}`, {
+    console.log('Attempting to search for:', username);
+    console.log('Using token:', !!octokit.auth); // Will log true/false if token exists
+    
+    const response = await octokit.request('GET /users/{username}', {
+      username,
       headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-      },
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
     });
-    const data = await response.json();
-    if (!response.ok) {
-      throw new Error('invalid API response, check the network tab');
+
+    console.log('API Response status:', response.status);
+    console.log('API Response exists:', !!response.data);
+
+    if (response.status === 200 && response.data) {
+      return response.data;
     }
-    return data;
-  } catch (err) {
-    // console.log('an error occurred', err);
-    return {};
+    throw new Error('No user data returned');
+  } catch (err: any) {
+    console.error('Full error:', err);
+    if (err.status === 404) {
+      throw new Error('No user found with that username');
+    }
+    if (err.status === 401) {
+      throw new Error('Authentication error - check GitHub token');
+    }
+    throw new Error(`Error fetching user data: ${err.message}`);
   }
 };
 
-export { searchGithub, searchGithubUser };
+export { searchGithubUser };
