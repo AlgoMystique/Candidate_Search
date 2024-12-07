@@ -46,11 +46,11 @@ The **Candidate Search Application** is a web-based tool designed to help employ
    git clone <repository-url>
    cd candidate-search-app
 ```
-** 2.Install Dependencies
+**2. Install Dependencies
 ```
 npm install
 ```
-** 3.Set Up Environment Variables
+**3. Set Up Environment Variables
 
 Create a .env file in the root directory and configure it as outlined in the Environment Variables section.
 
@@ -59,6 +59,7 @@ Create a .env file in the root directory and configure it as outlined in the Env
 npm start
 ```
 ## Usage
+
 1.Run the Application
 
 Open the application in your browser.
@@ -77,33 +78,34 @@ Saved candidates will remain available even after the page reloads.
 ##Environment Variables
 This application requires a GitHub token for accessing candidate information.
 
-**1.Generate a GitHub Token
+** 1.Generate a GitHub Token
 
-Log in to GitHub.
-Navigate to Settings > Developer Settings > Personal Access Tokens > Tokens (Classic).
-Generate a new token with the following permissions:
-```read:user```
-Copy the token.
+-Log in to GitHub.
+-Navigate to Settings > Developer Settings > Personal Access Tokens > Tokens (Classic).
+-Generate a new token with the following permissions:
+-```read:user```
+-Copy the token.
 
-**2.Set Up .env File
-Create a .env file in the root directory and add the following:
+** 2.Set Up .env File
+-Create a .env file in the root directory and add the following:
 ```
 REACT_APP_GITHUB_TOKEN=<your-github-token>
 ```
 
-##Technologies Used
+## Technologies Used
 
-Frontend: React, TypeScript, Vite
-API: GitHub REST API
-State Management: React Context API
-Environment Configuration: dotenv
+-Frontend: React, TypeScript, Vite
+-API: GitHub REST API
+-State Management: React Context API
+-Environment Configuration: dotenv
 
-##Contributing
+## Contributing
 
-Fork the repository.
-Create a new branch for your feature or fix.
-Submit a pull request with a detailed explanation of your changes.
+-Fork the repository.
+-Create a new branch for your feature or fix.
+-Submit a pull request with a detailed explanation of your changes.
 
 ##License
-This project is licensed under the MIT License.---
+-This project is licensed under the MIT License.---
+
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
