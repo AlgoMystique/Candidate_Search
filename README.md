@@ -75,7 +75,7 @@ Navigate to the Potential Candidates page to view all saved candidates.
 4.Persistent Data
 Saved candidates will remain available even after the page reloads.
 
-##Environment Variables
+## Environment Variables
 This application requires a GitHub token for accessing candidate information.
 
 ** 1.Generate a GitHub Token
