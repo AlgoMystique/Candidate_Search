@@ -84,15 +84,29 @@ This application requires a GitHub token for accessing candidate information.
 
 ## 1.Generate a GitHub Token
 
--Log in to GitHub.
+--Log in to GitHub.
 
--Navigate to Settings > Developer Settings > Personal Access Tokens > Tokens (Classic).
+--Verify your email address, if it hasn't been verified yet.
 
--Generate a new token with the following permissions:
+--In the upper-right corner of any page on GitHub, click your profile photo, then click  Settings.
 
--```read:user```
+--In the left sidebar, click  Developer settings.
+
+--In the left sidebar, under  Personal access tokens, click Tokens (classic).
+
+--Select Generate new token, then click Generate new token (classic).
+
+--In the "Note" field, give your token a descriptive name.
+
+--To give your token an expiration, select Expiration, then choose a default option or click Custom to enter a date.
+
+--Select the scopes you'd like to grant this token. To use your token to access repositories from the command line, select repo. A token with no assigned scopes can only access public information. -
+
+--Click Generate token.
 
 -Copy the token.
+
+--Read more here- [(https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)]
 
 ## 2.Set Up .env File
 
