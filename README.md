@@ -81,13 +81,19 @@ This application requires a GitHub token for accessing candidate information.
 ** 1.Generate a GitHub Token
 
 -Log in to GitHub.
+
 -Navigate to Settings > Developer Settings > Personal Access Tokens > Tokens (Classic).
+
 -Generate a new token with the following permissions:
+
 -```read:user```
+
 -Copy the token.
 
 ** 2.Set Up .env File
+
 -Create a .env file in the root directory and add the following:
+
 ```
 REACT_APP_GITHUB_TOKEN=<your-github-token>
 ```
