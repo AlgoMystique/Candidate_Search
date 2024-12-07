@@ -71,6 +71,7 @@ npm start
 2.Review Candidates
 
 --Use the "+" button to save a candidate to the list of potential hires.
+
 --Use the "-" button to skip to the next candidate without saving.
 
 3.View Saved Candidates
@@ -119,14 +120,19 @@ REACT_APP_GITHUB_TOKEN=<your-github-token>
 ## Technologies Used
 
 -Frontend: React, TypeScript, Vite
+
 -API: GitHub REST API
+
 -State Management: React Context API
+
 -Environment Configuration: dotenv
 
 ## Contributing
 
 -Fork the repository.
+
 -Create a new branch for your feature or fix.
+
 -Submit a pull request with a detailed explanation of your changes.
 
 ## License
